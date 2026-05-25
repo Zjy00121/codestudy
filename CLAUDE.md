@@ -8,4 +8,32 @@
 - **当前模块**: 0.1 数据与类型
 - **下一模块**: 0.2 常量与变量
 
-> 每完成一个模块后在 STUDY_PLAN.md 对应位置标注状态，同时更新此处的进度概览。
+> 每完成一个模块后在 STUDY_PLAN.md 对应位置标注状态，同时更新此处的进度概览。
+
+## 开发环境
+
+### Git 配置
+
+- **用户名**: ZJY
+- **邮箱**: 2401756429@qq.com
+- **远程仓库**: `https://github.com/Zjy00121/codestudy`
+- **凭据管理**: 已启用 `credential.helper manager`（Windows 凭据管理器）
+- **本地分支**: `master`，远程分支: `main`，推送命令: `git push origin HEAD:main`
+
+### 网络与代理
+
+国内网络环境下 GitHub 访问不稳定（ICMP ping 通但 TCP 443 被阻断），已配置 Git 全局代理：
+
+```bash
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy http://127.0.0.1:7890
+```
+
+**使用规则**：
+- 开启代理 → `git push` 正常工作
+- 在无需代理的网络下，临时取消代理再推送：
+
+```bash
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+```
