@@ -40,7 +40,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 当前项目 `codestudy` 是用户的代码学习目录，用于存放练习代码、笔记和小项目。
 
-每个学习模块是一个独立文件夹（如 `1 快速上手/`），内含 `.c` 源文件。模块编号对应 STUDY_PLAN.md 中的学习计划。
+每个学习模块是一个独立文件夹（如 `1_quickstart/`），内含 `.c` 源文件。模块编号对应 STUDY_PLAN.md 中的学习计划。
 
 ## 学习进度
 
