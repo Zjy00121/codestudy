@@ -42,6 +42,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 每个学习模块是一个独立文件夹（如 `1_quickstart/`），内含 `.c` 源文件。模块编号对应 STUDY_PLAN.md 中的学习计划。
 
+**命名规范**：所有文件、文件夹名称必须使用英文（可以包含数字和下划线）。MinGW GCC 链接器不支持中文路径，中文命名会导致编译失败。模块的中文含义写在 STUDY_PLAN.md 中即可。
+
 ## 学习进度
 
 学习计划详见 [STUDY_PLAN.md](STUDY_PLAN.md)，当前进度概览：
