@@ -46,8 +46,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 学习计划详见 [STUDY_PLAN.md](STUDY_PLAN.md)，当前进度概览：
 
-- **当前阶段**: 第一阶段 — 快速上手
-- **当前模块**: 1 快速上手
+- **当前阶段**: 第二阶段 — 基本概念
+- **当前模块**: 2.1 环境
+- **上一阶段**: 第一阶段 快速上手 [完成]
 
 > 每完成一个模块后在 STUDY_PLAN.md 对应位置标注状态，同时更新此处的进度概览。
 

@@ -21,7 +21,6 @@ int main(){
         {
             at_beginning = 1;
         }
-        
     }
     return 0;
 }
