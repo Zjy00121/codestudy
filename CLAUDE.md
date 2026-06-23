@@ -48,9 +48,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 学习计划详见 [STUDY_PLAN.md](STUDY_PLAN.md)，当前进度概览：
 
-- **当前阶段**: 第三阶段 — 数据
-- **当前模块**: 3.1 基本数据类型
-- **上一阶段**: 第二阶段 基本概念 [完成]
+- **当前阶段**: 第四阶段 — 语句
+- **当前模块**: 4.1 空语句
+- **上一阶段**: 第三阶段 数据 [完成]
 
 > 每完成一个模块后在 STUDY_PLAN.md 对应位置标注状态，同时更新此处的进度概览。
 
