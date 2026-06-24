@@ -36,6 +36,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - 如果问题涉及嵌入式/机器视觉/运动控制等方向，结合该领域的实际场景来解释。
 - 鼓励用户多动手写代码，少看多练。
 
+## 操作触发词
+
+- **"提交"** — 立即执行 `git add -A` + `git commit` + `git push origin HEAD:main`，无需确认。
+- **"总结记录"** — 将当前章节所有提问及相关知识点凝练成笔记，写入 `notes/` 文件夹。
+
 ## 项目结构
 
 当前项目 `codestudy` 是用户的代码学习目录，用于存放练习代码、笔记和小项目。
@@ -48,9 +53,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 学习计划详见 [STUDY_PLAN.md](STUDY_PLAN.md)，当前进度概览：
 
-- **当前阶段**: 第四阶段 — 语句
-- **当前模块**: 4.1 空语句
-- **上一阶段**: 第三阶段 数据 [完成]
+- **当前阶段**: 第五阶段 — 操作符和表达式
+- **当前模块**: 5.1 操作符
+- **上一阶段**: 第四阶段 语句 [完成]
 
 > 每完成一个模块后在 STUDY_PLAN.md 对应位置标注状态，同时更新此处的进度概览。
 
