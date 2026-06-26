@@ -53,9 +53,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 学习计划详见 [STUDY_PLAN.md](STUDY_PLAN.md)，当前进度概览：
 
-- **当前阶段**: 第五阶段 — 操作符和表达式
-- **当前模块**: 5.1 操作符
-- **上一阶段**: 第四阶段 语句 [完成]
+- **当前阶段**: 第六阶段 — 指针
+- **当前模块**: 6.1 内存和地址
+- **上一阶段**: 第五阶段 操作符和表达式 [完成]
 
 > 每完成一个模块后在 STUDY_PLAN.md 对应位置标注状态，同时更新此处的进度概览。
 

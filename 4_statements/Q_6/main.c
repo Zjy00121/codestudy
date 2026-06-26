@@ -36,5 +36,6 @@ void deblank (char string[]) {
         else if (string[i] != ' ' && at_beg == 0) {
             at_beg = 1;
         }
+        
     }
 }
