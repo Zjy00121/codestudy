@@ -49,13 +49,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **命名规范**：所有文件、文件夹名称必须使用英文（可以包含数字和下划线）。MinGW GCC 链接器不支持中文路径，中文命名会导致编译失败。模块的中文含义写在 STUDY_PLAN.md 中即可。
 
+**代码注释规范**：注释使用中文（方便自己阅读），`printf` 等输出使用英文（避免 Windows 终端中文乱码）。
+
 ## 学习进度
 
 学习计划详见 [STUDY_PLAN.md](STUDY_PLAN.md)，当前进度概览：
 
-- **当前阶段**: 第六阶段 — 指针
-- **当前模块**: 6.1 内存和地址
-- **上一阶段**: 第五阶段 操作符和表达式 [完成]
+- **当前阶段**: 第七阶段 — 函数
+- **当前模块**: 7.1 函数定义
+- **上一阶段**: 第六阶段 指针 [完成]
 
 > 每完成一个模块后在 STUDY_PLAN.md 对应位置标注状态，同时更新此处的进度概览。
 
@@ -76,6 +78,36 @@ gcc -g -Wall -Wextra -Wpedantic -o main.exe main.c
 - IntelliSense 配置见 `.vscode/c_cpp_properties.json`
 
 编译警告已开启 `-Wall -Wextra -Wpedantic -Wshadow -Wconversion` 等，建议编译时关注警告信息。
+
+### 多文件编译
+
+```bash
+# 方式一：通配符一次编译
+gcc -g -Wall -Wextra -Wpedantic *.c -o main.exe
+
+# 方式二：分步编译再链接
+gcc -c main.c && gcc -c helper.c
+gcc main.o helper.o -o main.exe
+```
+
+VSCode 任务 "编译目录所有 C 文件" 可一键编译目录下所有 `.c`（Ctrl+Shift+P → Tasks: Run Task）。
+
+### 链接数学库
+
+使用 `<math.h>` 的函数（`fabs`、`sqrt` 等）时需加 `-lm`：
+
+```bash
+gcc main.c -o main.exe -lm
+```
+
+### 常见问题
+
+| 问题 | 原因 | 解决 |
+|------|------|------|
+| F5 报错 `Invalid argument`（旧中文路径） | C/C++ Runner 插件自动添加含旧路径的配置 | 选 "GDB 调试" 配置，不要选 "C/C++ Runner" |
+| 终端中文乱码 | MinGW 二进制中文字面量与 Windows 控制台编码不兼容 | 代码中统一用英文 |
+| Code Runner 不支持输入 | Output 面板只读 | Ctrl+` 打开终端直接 `./main.exe`，或 "编译并运行" 任务 |
+| push 报 SSL 错误 | 代理偶发断连 | 重试一次即可 |
 
 ## 开发环境
 
