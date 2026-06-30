@@ -55,9 +55,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 学习计划详见 [STUDY_PLAN.md](STUDY_PLAN.md)，当前进度概览：
 
-- **当前阶段**: 第七阶段 — 函数
-- **当前模块**: 7.1 函数定义
-- **上一阶段**: 第六阶段 指针 [完成]
+- **当前阶段**: 第八阶段 — 数组
+- **当前模块**: 8.1 一维数组
+- **上一阶段**: 第七阶段 函数 [完成]
 
 > 每完成一个模块后在 STUDY_PLAN.md 对应位置标注状态，同时更新此处的进度概览。
 
